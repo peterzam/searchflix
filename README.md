@@ -1,6 +1,6 @@
 # SearchFlix
 
-![](https://raw.githubusercontent.com/peterzam/SearchFlix/master/icons/icon-128.png)
+![](https://raw.githubusercontent.com/peterzam/SearchFlix/master/src/icons/icon-128.png)
 
 ### Features
 
