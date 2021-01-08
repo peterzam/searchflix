@@ -1,0 +1,21 @@
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "SearchFlix: Netflix Genres Finder",
+  "short_name": "SFlix",
+  "description": "Quickly and Easily search for Netflix Geners.",
+  "version": "1.0.0",
+  "offline_enabled": true,
+  "permissions": ["tabs"],
+  "browser_action": {
+    "default_title": "Search Netflix Genres with SFlix",
+    "default_icon": "icons/icon-48.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "manifest_version": 2
+}

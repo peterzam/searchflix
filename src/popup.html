@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SearchFlix</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/hint.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:900,400"
+    />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popup.js"></script>
+  </head>
+  <body class="appBody">
+    <div class="header">
+      <span class="navRight">
+        <a
+          href="#search"
+          id="appHome"
+          class="navItem red hint--bottom"
+          data-hint="Search"
+          data-toggle="tab"
+        >
+          <i class="fas fa-search"></i>
+        </a>
+        <a
+          href="#about"
+          id="appAbout"
+          class="navItem blue hint--bottom"
+          data-hint="About"
+          data-toggle="tab"
+        >
+          <i class="fas fa-question"></i>
+        </a>
+      </span>
+      <span class="title">Search<span class="flix">Flix</span></span>
+      <span class="subTitle">Search Netflix Genres.</span>
+    </div>
+
+    <div class="tab-content">
+      <div id="search" class="tab-pane fade show active" role="tabpanel">
+        <form>
+          <input
+            class="form-control"
+            type="text"
+            id="searchCategory"
+            placeholder="Search..."
+          />
+        </form>
+        <div class="resultsSection">
+          <div id="resultsList"></div>
+        </div>
+      </div>
+      <div id="about" class="tab-pane fade" role="tabpanel">
+        <strong>SearchFlix version 1.0.0</strong><br /><br />
+        <strong>Contribution:</strong><br />
+        Found a bug? Report it
+        <a href="https://github.com/PeterZam/SearchFlix" target="_blank">here</a
+        >.<br />
+        <br />
+        <strong>Notice:</strong><br />
+        Can't access one of the categories? It may not be broken, it may be the
+        region you're accessing it from.<br /><br />
+
+        Netflix Genres List form
+        <a href="https://github.com/PeterZam/Netflix-Genres" target="_blank"
+          >here</a
+        >.<br />
+        Inspired by
+        <a
+          href="https://chrome.google.com/webstore/detail/findflix-netflix-secret-c/njgopmododdceghkcgbmgfffamnjbjno"
+          target="_blank"
+          >FindFlix by Josh Barker</a
+        >!<br /><br />
+        <small>This extension is in no way affiliated with Netflix</small>
+      </div>
+    </div>
+  </body>
+</html>
