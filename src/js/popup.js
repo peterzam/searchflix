@@ -8,15 +8,14 @@ function addEventListenersToResults(e) {
 $(document).ready(function () {
   $('#searchCategory').keyup(function () {
     var searchField = $('#searchCategory').val();
-    console.log(searchField);
     var searchExpression = new RegExp(searchField, 'i');
     $.getJSON('data/categories.json', function (data) {
       var resultOutput = '';
       $.each(data, function (key, val) {
-        if (val.title.search(searchExpression) != -1) {
+        if (val.t.search(searchExpression) != -1) {
           resultOutput += '<div class="result">';
-          resultOutput += '<a href="' + val.href + '">';
-          resultOutput += val.title;
+          resultOutput += '<a href="https://www.netflix.com/browse/genre/' + val.n + '">';
+          resultOutput += val.t;
           resultOutput += '</a></div>';
         }
       });
@@ -25,3 +24,4 @@ $(document).ready(function () {
   });
   $('body').on('click', '.result a', addEventListenersToResults);
 });
+
