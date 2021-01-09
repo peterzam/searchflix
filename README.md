@@ -1,6 +1,8 @@
 # SearchFlix
 
-![](https://raw.githubusercontent.com/peterzam/SearchFlix/master/src/icons/icon-128.png)
+<p align="center">
+  <img src="logo.png" width="150" title="hover text" alt="Logo">
+</p>
 
 ### Features
 
