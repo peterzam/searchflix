@@ -1,6 +1,6 @@
 # SearchFlix
 
-<p align="center">
+<p>
   <img src="logo.png" width="150" title="hover text" alt="Logo">
 </p>
 
@@ -33,5 +33,4 @@
 
 <hr>
 Notice: This project is inspired by <a href="https://chrome.google.com/webstore/detail/findflix-netflix-secret-c/njgopmododdceghkcgbmgfffamnjbjno">FindFlix</a> Chrome Extension
-
 
