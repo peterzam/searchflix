@@ -45,7 +45,10 @@
   color: #c0392b;
 }
 .navRight .blue:hover {
-  color: #3498db;
+  color: #01949A;
+}
+.navRight .navy:hover {
+  color: #004369;
 }
 input {
   margin-top: 10px;
