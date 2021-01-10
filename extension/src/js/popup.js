@@ -13,35 +13,58 @@ function debounce(callback, delay) {
   };
 }
 
+function csvJSON(csv) {
+  var lines = csv.split('\n');
+  var result = [];
+  var headers = ['n', 't'];
+  for (var i = 1; i < lines.length; i++) {
+    var obj = {};
+    var currentline = lines[i].split(',');
+    for (var j = 0; j < headers.length; j++) {
+      obj[headers[j]] = currentline[j].replace(/"(.+)"/g, '$1');
+    }
+    result.push(obj);
+  }
+  return result;
+}
+
 $(document).ready(function () {
-  $('#searchCategory').keyup(
-    debounce(function () {
-      var searchField = $('#searchCategory').val();
-      var resultCount = 0;
-      var searchExpression = new RegExp(searchField, 'i');
-      $.getJSON('data/categories.json', function (data) {
-        var resultOutput = '';
-        console.log(typeof searchExpression + searchExpression);
-        $.each(data, function (_, val) {
-          if (
-            searchExpression != '/(?:)/i' &&
-            val.t.search(searchExpression) != -1
-          ) {
-            resultOutput += '<div class="result"  class="tab-pane fade">';
-            resultOutput +=
-              '<a href="https://www.netflix.com/browse/genre/' + val.n + '">';
-            resultOutput += val.t;
-            resultOutput += '</a></div>';
-            console.log(searchField.length);
-            resultCount += 1;
-          }
-          if (resultCount > 500) {
-            return false;
-          }
-        });
-        $('#resultsList').html(resultOutput);
-      });
-    }, 100)
-  );
-  $('body').on('click', '.result a', addEventListenersToResults);
+  $.ajax({
+    type: 'GET',
+    url: './data/result.csv',
+    dataType: 'text',
+    success: function (csv) {
+      var data = csvJSON(csv);
+      $('#searchCategory').keyup(
+        debounce(function () {
+          var searchField = $('#searchCategory').val();
+          var resultCount = 0;
+          var searchExpression = new RegExp(searchField, 'i');
+          var resultOutput = '';
+          console.log(typeof searchExpression + searchExpression);
+          $.each(data, function (_, val) {
+            if (
+              searchExpression != '/(?:)/i' &&
+              val.t.search(searchExpression) != -1
+            ) {
+              resultOutput += '<div class="result"  class="tab-pane fade">';
+              resultOutput +=
+                '<a href="https://www.netflix.com/browse/genre/' +
+                val.n +
+                '" target=_blank>';
+              resultOutput += val.t;
+              resultOutput += '</a></div>';
+              console.log(searchField.length);
+              resultCount += 1;
+            }
+            if (resultCount > 500) {
+              return false;
+            }
+          });
+          $('#resultsList').html(resultOutput);
+        }, 200)
+      );
+      $('body').on('click', '.result a', addEventListenersToResults);
+    },
+  });
 });
