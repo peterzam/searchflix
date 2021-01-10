@@ -23,6 +23,7 @@
 ```
     git clone https://github.com/peterzam/SearchFlix.git
 ```
+
 - go to "chrome://extenstions" in browser
 
 - Open Developer mode
@@ -33,4 +34,3 @@
 
 <hr>
 Notice: This project is inspired by <a href="https://chrome.google.com/webstore/detail/findflix-netflix-secret-c/njgopmododdceghkcgbmgfffamnjbjno">FindFlix</a> Chrome Extension
-
