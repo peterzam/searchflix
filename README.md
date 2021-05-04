@@ -10,6 +10,10 @@
 
 <hr>
 
+## URL : <a href="https://peterzam.dev/SearchFlix/index.html">https://peterzam.dev/SearchFlix</a>
+
+## Website Branch : <a href="https://github.com/peterzam/SearchFlix/tree/web">Here</a>
+
 ## Installation
 
 ### <u>Install from Chrome Web Store</u>
