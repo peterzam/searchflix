@@ -14,11 +14,13 @@
 
 ## Website Branch : <a href="https://github.com/peterzam/SearchFlix/tree/web">Here</a>
 
-## Installation
+<hr>
+
+## Installation (Chrome)
 
 ### <u>Install from Chrome Web Store</u>
 
-- Go to chrome web store <a href="https://chrome.google.com/webstore/detail/searchflix-netflix-genres/jdgbainblgdephbianomkogjjdnnjbpn">link(here)</a>
+- Go to chrome web store <a href="https://chrome.google.com/webstore/detail/searchflix-netflix-genres/jdgbainblgdephbianomkogjjdnnjbpn">link (here)</a>
 
 - Add to Chrome
 
@@ -37,4 +39,13 @@
 - choose git cloned "src" folder
 
 <hr>
+
+## Installation (Firefox)
+
+- Download <a href="https://github.com/peterzam/SearchFlix/releases/download/v2.0/SearchFlix-Extension.v2.0.Firefox.xpi">here</a>
+
+- The add automatically (or) Open "SearchFlix-Extension.*.Firefox.xpi" 
+
+<hr>
+
 Notice: This project is inspired by <a href="https://chrome.google.com/webstore/detail/findflix-netflix-secret-c/njgopmododdceghkcgbmgfffamnjbjno">FindFlix</a> Chrome Extension
