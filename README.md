@@ -18,7 +18,7 @@
 
 ### <u>Install from Chrome Web Store</u>
 
-- Add from [chrome web store]("https://chrome.google.com/webstore/detail/searchflix-netflix-genres/jdgbainblgdephbianomkogjjdnnjbpn")
+- Add from [chrome web store](https://chrome.google.com/webstore/detail/searchflix-netflix-genres/jdgbainblgdephbianomkogjjdnnjbpn)
 
 ### <u>Manual Install</u>
 
