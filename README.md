@@ -6,13 +6,11 @@
 
 ## Features
 
-- contains over 33000 Netflix hidden genre codes.
+- Contains over 33000 Netflix hidden genre codes.
 
 <hr>
 
-## URL : <a href="https://peterzam.dev/SearchFlix/index.html">https://peterzam.dev/SearchFlix</a>
-
-## Website Branch : <a href="https://github.com/peterzam/SearchFlix/tree/web">Here</a>
+## URL : https://peterzam.dev/searchflix
 
 <hr>
 
@@ -20,14 +18,12 @@
 
 ### <u>Install from Chrome Web Store</u>
 
-- Go to chrome web store <a href="https://chrome.google.com/webstore/detail/searchflix-netflix-genres/jdgbainblgdephbianomkogjjdnnjbpn">link (here)</a>
-
-- Add to Chrome
+- Add from [chrome web store]("https://chrome.google.com/webstore/detail/searchflix-netflix-genres/jdgbainblgdephbianomkogjjdnnjbpn")
 
 ### <u>Manual Install</u>
 
 ```
-    git clone https://github.com/peterzam/SearchFlix.git
+    git clone https://github.com/peterzam/searchflix.git
 ```
 
 - go to "chrome://extenstions" in browser
@@ -36,15 +32,15 @@
 
 - Load unpacked
 
-- choose git cloned "src" folder
+- choose git cloned "src/extension" folder
 
 <hr>
 
 ## Installation (Firefox)
 
-- Download <a href="https://github.com/peterzam/SearchFlix/releases/download/v2.0/SearchFlix-Extension.v2.0.Firefox.xpi">here</a>
+- Download the latest release [release](releases)
 
-- The add automatically (or) Open "SearchFlix-Extension.*.Firefox.xpi" 
+- The add automatically (or) Open "SearchFlix-Extension.*.Firefox.xpi"
 
 <hr>
 
