@@ -49,7 +49,7 @@ function csvJSON(csv) {
 $(document).ready(function () {
   $.ajax({
     type: 'GET',
-    url: 'https://codeberg.org/peterzam/SearchFlix/raw/branch/main/src/data/result.csv',
+    url: 'https://codeberg.org/peterzam/SearchFlix/raw/branch/main/src/extension/data/result.csv',
     dataType: 'text',
     success: function (csv) {
       var data = csvJSON(csv);
